@@ -26,5 +26,3 @@ const ProductStyles = async (req, res) => {
 };
 
 module.exports = ProductStyles;
-
-// json_agg(json_build_object('id', photos.id, 'url', photos.url)) AS photos

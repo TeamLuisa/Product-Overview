@@ -21,7 +21,6 @@ CREATE TABLE product (
   category VARCHAR NULL DEFAULT NULL,
   default_price VARCHAR NULL DEFAULT NULL,
   id_product INTEGER NULL DEFAULT NULL
-  -- PRIMARY KEY (id)
 );
 
 ---

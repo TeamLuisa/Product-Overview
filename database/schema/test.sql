@@ -38,10 +38,10 @@ CREATE TABLE skus (
   quantity INTEGER NULL DEFAULT NULL
 );
 
-COPY zip_codes FROM '/Users/houhengli/Downloads/styles.csv' DELIMITER ',' (FORMAT csv);
+COPY styles FROM '/Users/houhengli/Downloads/styles.csv' DELIMITER ',' (FORMAT csv);
 
-COPY skus
-FROM '/Users/houhengli/Downloads/skus.csv'
+COPY styles
+FROM '/Users/houhengli/Downloads/styles.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -84,3 +84,5 @@ select json_object_agg(id, json_build_object('quantity', quantity, 'size', size)
 select style_id, name, size, quantity from styles s INNER JOIN skus sk on s.style_id = sk.styleid INNER JOIN photos p ON sk.styleid = p.styleid limit 10;
 
 select related_product_id from related where current_product_id = ${product_id};
+
+CREATE

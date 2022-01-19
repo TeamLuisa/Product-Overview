@@ -2,7 +2,7 @@ const API_Token = require('../config.js');
 const axios = require('axios');
 
 const api = {
-    address: 'https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp',
+    address: 'http://localhost:4000/',
 
     // Products Info
     getAllProducts: (store) => {

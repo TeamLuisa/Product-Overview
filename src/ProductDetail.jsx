@@ -30,10 +30,10 @@ const ProductDetail = () => {
         <Overview />
       </OverviewProvider>
       <RelatedProducts/>
-      <QA />
+      {/* <QA />
       <RatingsAndReviewsProvider>
         <RatingsAndReviews />
-      </RatingsAndReviewsProvider>
+      </RatingsAndReviewsProvider> */}
 
     </div>
   );

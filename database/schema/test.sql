@@ -40,7 +40,7 @@ CREATE TABLE skus (
 
 COPY styles FROM '/Users/houhengli/Downloads/styles.csv' DELIMITER ',' (FORMAT csv);
 
-COPY styles
+\copy styles
 FROM '/Users/houhengli/Downloads/styles.csv'
 DELIMITER ','
 CSV HEADER;
@@ -86,3 +86,7 @@ select style_id, name, size, quantity from styles s INNER JOIN skus sk on s.styl
 select related_product_id from related where current_product_id = ${product_id};
 
 CREATE
+
+--  psql --host=ec2-54-167-20-92.compute-1.amazonaws.com --port=5432 --username=ubuntu --password --dbname=product_overview
+
+ \copy photos from '/Users/houhengli/Downloads/photos.csv' WITH DELIMITER ',' CSV HEADER;

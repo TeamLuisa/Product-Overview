@@ -6,4 +6,4 @@ CREATE TABLE related (
 
 ALTER TABLE related ADD CONSTRAINT fk_product FOREIGN KEY (current_product_id) REFERENCES product (id);
 
-CREATE INDEX related_product_idx on photos (current_product_id);
+CREATE INDEX related_product_idx on related (current_product_id);

@@ -6,10 +6,10 @@ export const requests = new Counter('http_reqs');
 
 export const options = {
   vus: 1000,
-  duration: '15s',
+  duration: '30s',
 };
 
-const url = 'http://127.0.0.1:4000/products/1000011/styles';
+const url = 'http://localhost:4000/products/1000011/styles';
 
 // const url = 'http://localhost:5000/reviews/meta';
 

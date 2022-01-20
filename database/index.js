@@ -4,7 +4,7 @@ const ListProducts = require('./midware/ListProducts.js');
 const ProductInfo = require('./midware/ProductInfo.js');
 const ProductStyles = require('./midware/ProductStyles.js');
 const RelatedProducts = require('./midware/RelatedProducts.js');
-
+require('newrelic');
 const path = require('path')
 
 var app = express();
